@@ -1,4 +1,4 @@
-# 💔Opdracht 2 - "Breek het web"💔
+# 💔 Opdracht 2 - "Breek het web" 💔
 
 Voor deze opdracht moeten verschillende soorten features onderzocht worden, om zo te bepalen welk invloed en impact deze hebben op verschillende websites.
 Deze websites ga ik testen, door de door mij gekozen features op de websites uit te schakelen.
@@ -17,7 +17,7 @@ Web Developer is een handige tool die je kan gebruiken om bepaalde features van 
 Als je geen gebruik wil maken van de extentie kun je als volgt het laden van de afbeeldingen uitschakelen:<br><br>
 Google Chrome:
 
-- Instellingen -> Privacy en beveiliging -> Site-instellingen -> Afbeeeldingen -> uitschakelen
+- Instellingen -> Privacy en beveiliging -> Site-instellingen -> Afbeeldingen -> uitschakelen
 
 Microsoft Edge:
 
@@ -38,10 +38,9 @@ Tijdens het laden van de website zie ik via het netwerk-tabblad van Google Chrom
 ### 📡 Bandbreedte aanpassen
 <br>
 Ik kan via het netwerk-tabblad ook de bandbreedte van de internet veranderen. Als ik de bandbreedte aanpas naar "Slow 3G", doet de website er 59 seconden over om de website met afbeeldingen volledig te laden. Zonder afbeeldingen doet de website er maar 7 seconden over. 
-
+<br><br>
 Als ik de bandbreedte aanpas naar "Fast 3G", doet de website er ongeveer 13 seconden over om volledige (inclusief afbeeldingen) te laden. Zonder afbeeldingen doet de website er ongeveer 3 seconden over. Dit verschil is ongeveer 10 seconden.
-<br>
-
+<br><br>
 Het verschil in laadtijd tussen de verschillende soorten bandbreedtes is aanzienlijk groot, dus zo kun je zien dat afbeeldingen heel veel moeite kosten voor de webbrowsers om te kunnen renderen. Ook kun je concluderen dat hoe sneller je internetverbinding is, hoe sneller de website met of zonder afbeeldingen laadt.
 <br><br>
 
@@ -76,7 +75,17 @@ Er zijn dus heel veel features en onderdelen waar je als web designer rekening m
 <br><br>
 
 ### 📰 Bronnen:
-https://cherry-communicatie.nl/blog/invloed-van-afbeeldingen-op-je-website/#:~:text=Afbeeldingen%20geven%20een%20website%20grotendeels,ruimte%20in%20beslag%20dan%20tekst.
+https://cherry-communicatie.nl/blog/invloed-van-afbeeldingen-op-je-website/#:~:text=Afbeeldingen%20geven%20een%20website%20grotendeels,ruimte%20in%20beslag%20dan%20tekst
 
 <br><br>
 ## 🔠 Custom Fonts uitschakelen
+Custom fonts zijn tegenwoordig niet meer weg te denken van websites. Ze zorgen voor een prettigere leeservaring, en zorgen voor meer sfeer op de website. Tegenwoordig zijn er duizenden soorten custom fonts die je kunt importeren vanuit bijvoorbeeld Google Fonts (https://fonts.google.com/), of FontSpace (https://www.fontspace.com). <br>Deze custom fonts zijn natuurlijk leuk voor de website, en kunnen als prettig worden ervaren door de gebruiker, maar het brengt ook de nodige problemen met zich mee.<br> Ik zal een paar van deze problemen verder toelichten.
+<br><br>
+### 💢 Problemen
+Net zoals afbeeldingen, duurt het laden van een website langer omdat deze eerst de custom fonts moeten inladen.
+### 📡 Bandbreedte aanpassen
+### 🌐 Andere browser
+### 🔨 Wat valt er te fixen?
+### 📰 Bronnen:
+https://www.wholegraindigital.com/blog/performant-web-fonts/
+
