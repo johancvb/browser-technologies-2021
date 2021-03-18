@@ -17,9 +17,13 @@ app.get('/', function (req, res) {
 
 // Create overview page
 app.get('/home', function (req, res) {
-
+    res.render('home.ejs')
 });
 
+// Create detailed page
+app.get('/shirt_maker', function(req, res){
+    res.render('shirt_maker.ejs')
+})
 
 // Actually set up the server
 app.listen(config.port, function () {
