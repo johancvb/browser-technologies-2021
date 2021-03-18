@@ -1,4 +1,4 @@
-# T-Shirt Generator
+# 👕 T-Shirt Generator
 
 Ik heb voor het vak Browser Technologies de use case: "Nerdy T-shirt" gekozen.
 Het doel van deze use case is om een applicatie te maken waarin je je eigen T-shirt kan ontwerpen. Deze T-shirts kun je uiteindelijk ook terugzien, bewerken en "bestellen" op een bestelpagina.
