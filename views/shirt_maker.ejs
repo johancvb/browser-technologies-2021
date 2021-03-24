@@ -1,14 +1,57 @@
 <%- include("./partials/head.ejs") %>
-<%- include("./partials/header.ejs") %>
-<div class="wrapper">
-    <div class="shirt">
-        <img src="img/black.png" alt="">
-        <h2>A black T-shirt</h2>
-    </div>
-    <div class="info">
-        <form action="">
+    <%- include("./partials/header.ejs") %>
+        <div class="wrapper">
+            <div class="shirt">
+                <img id="shirt_canvas" src="../img/black.jpg">
+                <h2></h2>
+            </div>
+            <div class="info">
+                <h1>Design your T-shirt:</h1>
+                <form action="">
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Colors:</legend>
+                        <input type="radio" id="black" name="color" value="black" checked>
+                        <label for="black">Black</label>
+                        <input type="radio" id="white" name="color" value="white">
+                        <label for="white">White</label>
+                        <input type="radio" id="blue" name="color" value="blue">
+                        <label for="blue">Blue</label>
+                        <input type="radio" id="red" name="color" value="red">
+                        <label for="red">Red</label>
+                        <input type="radio" id="purple" name="color" value="purple">
+                        <label for="purple">Purple</label>
+                        <input type="radio" id="yellow" name="color" value="yellow">
+                        <label for="yellow">Yellow</label>
+                        <input type="radio" id="green" name="color" value="green">
+                        <label for="green">Green</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Size:</legend>
 
-        </form>
-    </div>
-</div>
-<%- include("./partials/footer.ejs") %>
+                        <select name="size" id="size">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Text:</legend>
+                        <label for="text">Type your text:</label><br>
+                        <input type="text" id="text" name="text">
+                        <button type="button" id="textAdd">Add text</button>
+                    </fieldset>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+        <%- include("./partials/footer.ejs") %>
