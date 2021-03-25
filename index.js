@@ -1,9 +1,8 @@
 const { v4: uuidv4 } = require('uuid');
 const express = require('express');
 
-const config = {
-	port: 5000
-}
+const port = 5000;
+
 
 const app = express();
 
@@ -44,6 +43,6 @@ app.get('/buy/:id', function(req, res){
 })
 
 // Actually set up the server
-app.listen(config.port, function () {
-	console.log(`Application started on port: ${config.port}`);
+app.listen(port, function () {
+	console.log(`Application started on port: ${port}`);
 });
