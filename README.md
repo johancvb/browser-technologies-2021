@@ -1,3 +1,6 @@
+# Live link naar demo:
+https://frozen-thicket-59522.herokuapp.com/ 
+
 # 👕 T-Shirt Generator
 
 Ik heb voor het vak Browser Technologies de use case: "Nerdy T-shirt" gekozen.
