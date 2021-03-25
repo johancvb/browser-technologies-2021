@@ -1,3 +1,6 @@
+if(window.location.pathname.includes('shirt_maker')){
+
+
 // SHIRT COLOR
 
 // Black shirt
@@ -64,11 +67,16 @@ function changeGreen() {
 }
 
 // TEXT INPUT ON SHIRT
-let textInput = document.getElementById("textAdd")
+let shirtInput = document.getElementById("textAdd")
 
-textInput.addEventListener("click", Shirttext);
+shirtInput.addEventListener("click", textOnShirt);
 
-function Shirttext() {
-    let textValue = document.getElementById('text').value
-    document.querySelector(".shirt > h2").innerHTML=textValue
+function textOnShirt() {
+    let value = document.getElementById('text').value
+    document.querySelector(".shirt > h2").innerHTML=value
+}
+
+// SHIRT OPSLAAN NAAR LOCALSTORAGE
+
+
 }

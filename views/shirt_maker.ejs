@@ -7,7 +7,7 @@
             </div>
             <div class="info">
                 <h1>Design your T-shirt:</h1>
-                <form action="">
+                <form action="/buy/<%= id %>" id="myForm">
                     <fieldset>
                         <legend>Gender:</legend>
                         <input type="radio" id="male" name="gender" value="male" checked>
@@ -50,7 +50,7 @@
                         <input type="text" id="text" name="text">
                         <button type="button" id="textAdd">Add text</button>
                     </fieldset>
-                    <button type="submit">Save</button>
+                    <button type="submit" id="saveBtn">Save & Buy</button>
                 </form>
             </div>
         </div>
