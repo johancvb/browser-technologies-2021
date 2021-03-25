@@ -7,6 +7,8 @@ const config = {
 
 const app = express();
 
+app.listen(process.env.PORT || port, () => console.log(`Listening at: ${port}`));
+
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 app.use(express.static(__dirname + '/public'));
