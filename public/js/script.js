@@ -1,82 +1,83 @@
-if(window.location.pathname.includes('shirt_maker')){
+if (window.location.pathname.includes('shirt_maker')) {
 
 
-// SHIRT COLOR
 
-// Black shirt
-let black = document.getElementById('black')
-black.addEventListener("click", changeBlack);
 
-function changeBlack() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/black.jpg"  
-}
+    // SHIRT COLOR
 
-// White shirt
-let white = document.getElementById('white')
-white.addEventListener("click", changeWhite);
+    // Black shirt
+    let black = document.getElementById('black')
+    black.addEventListener("click", changeBlack);
 
-function changeWhite() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/white.jpg"   
-}
+    function changeBlack() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/black.jpg"
+    }
 
-// Blue shirt
-let blue = document.getElementById('blue')
-blue.addEventListener("click", changeBlue);
+    // White shirt
+    let white = document.getElementById('white')
+    white.addEventListener("click", changeWhite);
 
-function changeBlue() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/blue.jpg"  
-}
+    function changeWhite() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/white.jpg"
+    }
 
-// Red shirt
-let red = document.getElementById('red')
-red.addEventListener("click", changeRed);
+    // Blue shirt
+    let blue = document.getElementById('blue')
+    blue.addEventListener("click", changeBlue);
 
-function changeRed() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/red.jpg"  
-}
+    function changeBlue() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/blue.jpg"
+    }
 
-// Purple shirt
-let purple = document.getElementById('purple')
-purple.addEventListener("click", changePurple);
+    // Red shirt
+    let red = document.getElementById('red')
+    red.addEventListener("click", changeRed);
 
-function changePurple() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/purple.jpg"  
-}
+    function changeRed() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/red.jpg"
+    }
 
-// Yellow shirt
-let yellow = document.getElementById('yellow')
-yellow.addEventListener("click", changeYellow);
+    // Purple shirt
+    let purple = document.getElementById('purple')
+    purple.addEventListener("click", changePurple);
 
-function changeYellow() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/yellow.jpg"  
-}
+    function changePurple() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/purple.jpg"
+    }
 
-// Green shirt
-let green = document.getElementById('green')
-green.addEventListener("click", changeGreen);
+    // Yellow shirt
+    let yellow = document.getElementById('yellow')
+    yellow.addEventListener("click", changeYellow);
 
-function changeGreen() {
-    shirt = document.getElementById("shirt_canvas");
-    shirt.src = "../img/green.jpg"  
-}
+    function changeYellow() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/yellow.jpg"
+    }
 
-// TEXT INPUT ON SHIRT
-let shirtInput = document.getElementById("textAdd")
+    // Green shirt
+    let green = document.getElementById('green')
+    green.addEventListener("click", changeGreen);
 
-shirtInput.addEventListener("click", textOnShirt);
+    function changeGreen() {
+        shirt = document.getElementById("shirt_canvas");
+        shirt.src = "../img/green.jpg"
+    }
 
-function textOnShirt() {
-    let value = document.getElementById('text').value
-    document.querySelector(".shirt > h2").innerHTML=value
-}
+    // TEXT INPUT ON SHIRT
+    let shirtInput = document.getElementById("textAdd")
 
-// SHIRT OPSLAAN NAAR LOCALSTORAGE
+    shirtInput.addEventListener("click", textOnShirt);
+
+    function textOnShirt() {
+        let value = document.getElementById('text').value
+        document.querySelector(".shirt > h2").innerHTML = value
+    }
+
 
 
 }

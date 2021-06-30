@@ -1,48 +1,56 @@
 const { v4: uuidv4 } = require('uuid');
 const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+var json = require('./data.json')
+// const localStorage = require('node-localstorage')
+
+
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const port = 5000;
 
 
-const app = express();
 
-app.listen(process.env.PORT || port, () => console.log(`Listening at: ${port}`));
+const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-	res.redirect('/home');
+    res.redirect('/home');
 });
 
-// Create overview page
+
+
+app.get('/shirt_maker', function (req, res) {
+
+    res.render('shirt_maker.ejs');
+});
+
+// app.get('/buy', function (req, res) {
+// 	res.render('buy.ejs');
+// });
+
+app.post('/buy', urlencodedParser, function (req, res) {
+
+
+    res.render("buy.ejs", {
+        data: json
+    })
+})
+
 app.get('/home', function (req, res) {
+
     res.render('home.ejs', {
-		id : uuidv4()
-	})
+        data: json
+    });
 });
 
-app.get('/shirt_maker/:id', function(req, res){
-	// console.log(req.params.id)
-    res.render('shirt_maker.ejs', {
-		id : req.params.id
-	})
-})
-
-app.get('/buy/:id', function(req, res){
-	console.log(req.query.gender)
-	console.log(req.query.color)
-	console.log(req.query.size)
-	console.log(req.query.text)
-	console.log(req.params.id)
-	res.render('buy.ejs', {
-		id : req.params.id
-	})
-	
-})
 
 // Actually set up the server
 app.listen(port, function () {
-	console.log(`Application started on port: ${port}`);
+    console.log(`Application started on port: ${port}, http://localhost:${port}`);
 });
